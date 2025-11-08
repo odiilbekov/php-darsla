@@ -33,7 +33,21 @@ sort( $sonlar);
 print_r($sonlar);
 
 rsort($sonlar);
-print_r($sonlar)
+print_r($sonlar);
+
+$users = [
+    ["ism" => "Ali",'familya' => "odilbekov","t_yili" => 2011],
+    ["ism" => "zerib",'familya' => "otajonov","t_yili" => 2011],
+];
+print_r($users);
+echo $users[0]['ism']. '/n';
+echo $users[0]['familya']. "/n";
+$sonlar = [
+    [9404,493,434,[242,424,657,]],
+    [7,5,6,7,8],
+    [72,238,242,],
+];
+$print_r($users);
 
 
 
