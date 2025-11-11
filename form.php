@@ -1,13 +1,6 @@
-<?php
-$sarlavha = "O‘zbekistonda shakli va uslubi oldingilaridan mutlaqo farq qilmaydigan XCM moliyaviy piramidasi tobora ommalashib bormoqda. Achinarlisi, bu cho‘pchakka uning oldini olishi kerak bo‘lgan xizmatlar xodimlari ham ishonishyapti. Hatto ayrim xodimlar XCM targ‘ibotiga qo‘shilib, u “ishonchli ekani”ni aytmoqda. Ushbu moliyaviy piramidaga pul tikayotgan minglab fuqarolar aldanib qolish arafasida.";
-$matin = "O‘zbekistonda shakli va uslubi oldingilaridan mutlaqo farq qilmaydigan XCM moliyaviy piramidasi tobora ommalashib bormoqda. Achinarlisi, bu cho‘pchakka uning oldini olishi kerak bo‘lgan xizmatlar xodimlari ham ishonishyapti. Hatto ayrim xodimlar XCM targ‘ibotiga qo‘shilib, u “ishonchli ekani”ni aytmoqda. Ushbu moliyaviy piramidaga pul tikayotgan minglab fuqarolar aldanib qolish arafasida.
-XCM nima ?
-otgan yilda vidoe";
-
-
-?>
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +20,7 @@ otgan yilda vidoe";
       background-color: #fff;
       padding: 25px 30px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       width: 400px;
     }
 
@@ -78,21 +71,22 @@ otgan yilda vidoe";
     }
   </style>
 </head>
+
 <body>
 
-  <form class="post-form" action="/post_yuborish" method="POST">
+  <form class="post-form" action="data.php" method="POST">
     <h2>Yangi Post</h2>
+      <label> for="sarlavha">Sarlavha</label>
+      <input type="text" id="sarlavha" name="sarlavha" required>
 
-    <label for="sarlavha">Sarlavha</label>
-    <input type="text" id="sarlavha" name="sarlavha" value="<?php echo $sarlavha ?>" required>
+      <label for="matn">Matn</label>
+      <textarea id="matn" name="matn" rows="6" required>
 
-    <label for="matn">Matn</label>
-    <textarea id="matn" name="matn" rows="6" required>
-        <?php echo $matn ?>
-</textarea>
+      </textarea>
 
-    <button type="submit">Yuborish</button>
-  </form>
+      <button type="submit">Yuborish</button>
+    </form>
 
 </body>
+
 </html>

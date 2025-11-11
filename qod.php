@@ -1,0 +1,1 @@
+   $success = "Xabaringiz muvaffaqiyatli yuborildi — rahmat, {$name}
