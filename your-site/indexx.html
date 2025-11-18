@@ -1,0 +1,52 @@
+<?php
+// Agar xohlasa, dinamik kontent qo'shishingiz mumkin
+$title = "Mening Zo'r PHP Saytim";
+$subtitle = "PHP bilan kuchaytirilgan zamonaviy web sayt!";
+?>
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title ?></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="title"><?= $title ?></h1>
+    <p class="subtitle"><?= $subtitle ?></p>
+    <a href="#contact" class="btn">Bog'lanish</a>
+</header>
+
+<section id="about">
+    <h2>Men Haqimda</h2>
+    <p>Bu joyni PHP orqali dinamik qilishingiz mumkin.</p>
+</section>
+
+<section id="services">
+    <h2>Xizmatlar</h2>
+    <div class="cards">
+        <div class="card">Web Dasturlash</div>
+        <div class="card">Dizayn</div>
+        <div class="card">Marketing</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Aloqa</h2>
+    <form action="contact.php" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Ismingiz" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Xabaringiz" required></textarea>
+        <button type="submit" class="btn">Yuborish</button>
+    </form>
+</section>
+
+<footer>
+    © <?= date("Y") ?> | PHP bilan yozilgan zo'r sayt
+</footer>
+
+</body>
+</html>
